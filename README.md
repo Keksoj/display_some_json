@@ -21,4 +21,4 @@ The goal: recreate a front-end mock-up as best I can. Display this kind of JSON:
 
 into neat rows with neat boxes.
 
-To see the result, follow [this link](https://keksoj.github.io/display_some_json)
+To see the result, follow [this link](https://keksoj.github.io/display_some_json).

@@ -88,7 +88,7 @@ export default class Topic {
                         class="arrow-button" 
                         onclick="toggleDisplay('${this.name}')"
                     >
-                        <img src="/imgs/button.png" />
+                        <img src="./imgs/button.png" />
                     </button>
 
                     <div class="description" id="${this.name}" style="display: none;">
