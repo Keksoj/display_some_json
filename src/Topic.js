@@ -41,36 +41,60 @@ export default class Topic {
         return html
     }
 
-    renderAsAFramework() {
+    /**
+     * renders a language box with color decoration and buttons and all
+     * @returns {string}
+     */
+    renderAsALanguage() {
         var html = `
-            <div class="box">
+            <div class="box" style="background: ${this.color}">
                 <div class="box-title">${this.name}</div>
                 <div class="box-logo">
                     <img src="./imgs/${this.logo}" />
                 </div>
-                <div class="description" id="${this.name}" style="display: none;">
-                <p>${this.description}</p>
+                <div class="box-description">
+                    <div class="description" id="${this.name}" style="display: none;">
+                        <p>${this.description}</p>
+                    </div>
+
+                    <button 
+                        class="language-button"
+                        id="${this.name}-button" 
+                        onclick="toggleDisplay('${this.name}')"
+                        style="background-color: ${this.secondColor}"
+                    >
+                        Voir la description
+                    </button>
                 </div>
-                <button class="arrow-button" onclick="toggleDisplay('${this.name}')">
-                    <img src="/imgs/button.png" />
-                </button>
             </div>`
         return html
     }
 
-    renderAsALanguage() {
+    /**
+     * renders a framework box with color decoration and buttons and all
+     * @returns {string}
+     */
+    renderAsAFramework() {
         var html = `
-            <div class="box">
+            <div class="box" style="background: ${this.color}">
                 <div class="box-title">${this.name}</div>
                 <div class="box-logo">
                     <img src="./imgs/${this.logo}" />
+                </div>      
+                <div class="box-description">
+
+                    <button 
+                        id="${this.name}-button" 
+                        class="arrow-button" 
+                        onclick="toggleDisplay('${this.name}')"
+                    >
+                        <img src="/imgs/button.png" />
+                    </button>
+
+                    <div class="description" id="${this.name}" style="display: none;">
+                        <p>${this.description}</p>
+                    </div>    
                 </div>
-                <div class="description" id="${this.name}" style="display: none;">
-                <p>${this.description}</p>
-                </div>
-                <button onclick="toggleDisplay('${this.name}')">
-                    Voir la description
-                </button>
             </div>`
         return html
     }

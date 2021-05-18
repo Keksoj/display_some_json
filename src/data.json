@@ -90,7 +90,7 @@
         {
             "id": 5,
             "name": "Symfony",
-            "color": "rgb(35 35 35)",
+            "color": "white",
             "secondColor": "#000000",
             "logo": "symfony.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",

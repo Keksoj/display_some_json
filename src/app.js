@@ -2,6 +2,9 @@ import Topic from './Topic.js'
 
 var content = document.getElementById('content')
 
+/**
+ * This fetches the data, calls the main rendering function on it and feeds the DOM
+ */
 fetch('./src/data.json')
     .then((res) => res.json())
     .then((data) => {
@@ -12,6 +15,11 @@ fetch('./src/data.json')
         console.log('fetch problem: ' + err.message)
     })
 
+/**
+ * this main format-into-html function is merely a call to the others
+ * @param {Object} data 
+ * @returns {string} beautifully html-formatted content
+ */
 const beautifyData = (data) => {
     var html = ''
     html += '<h1>Les Technologies du web</h1>'
@@ -20,6 +28,11 @@ const beautifyData = (data) => {
     return html
 }
 
+/**
+ * Creates the language row
+ * @param {Object} data 
+ * @returns {string} an html-formatted row of language boxes
+ */
 const languagesIntoHtml = (data) => {
     var languages = []
     for (var language of data.languages) {
@@ -38,7 +51,7 @@ const languagesIntoHtml = (data) => {
         )
     }
 
-    var html = '<h2>Les Langages du web</h2>'
+    var html = '<h2>1. Les Langages du web</h2>'
     html += '<div class="language-row">'
     for (var language of languages) {
         // console.log(language.render())
@@ -48,6 +61,11 @@ const languagesIntoHtml = (data) => {
     return html
 }
 
+/**
+ * Creates the framework rows
+ * @param {Object} data 
+ * @returns {string} the html-formatted rows of framework boxes
+ */
 const frameworksIntoHtml = (data) => {
     var frameworks = []
     for (var framework of data.frameworks) {
@@ -89,13 +107,12 @@ const frameworksIntoHtml = (data) => {
     backEndFrameworksRow += '</div>'
     crossPlatformFrameworksRow += '</div>'
 
-    // console.log(frontEndFrameworksRow)
     var html = ''
-    html += '<h2>Les frameworks front</h2>'
+    html += '<h2>2. Les frameworks front</h2>'
     html += frontEndFrameworksRow
-    html += '<h2>Les frameworks back-end</h2>'
+    html += '<h2>3. Les frameworks back-end</h2>'
     html += backEndFrameworksRow
-    html += '<h2>Les frameworks cross-platform</h2>'
+    html += '<h2>4. Les frameworks cross-platform</h2>'
     html += crossPlatformFrameworksRow
     return html
 }
