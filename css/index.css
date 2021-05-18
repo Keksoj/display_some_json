@@ -1,0 +1,29 @@
+h1 h2 {
+    text-align: center;
+}
+
+.framework-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.language-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: solid 1px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box img {
+    width: 200px;
+}
+
+.arrow-button img {
+    width: 50px;
+    image-orientation: 180deg;
+}

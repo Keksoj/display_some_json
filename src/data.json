@@ -1,0 +1,141 @@
+{
+    "languages": [
+        {
+            "id": 1,
+            "name": "HTML",
+            "color": "rgb(229 76 34)",
+            "secondColor": "rgb(241 101 37)",
+            "logo": "html.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "html"]
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "color": "rgb(28 115 186)",
+            "secondColor": "rgb(29 136 199)",
+            "logo": "css.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "css"]
+        },
+        {
+            "id": 3,
+            "name": "JS",
+            "color": "rgb(218 185 46)",
+            "secondColor": "rgb(254 216 59)",
+            "logo": "JS.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "js"]
+        },
+        {
+            "id": 4,
+            "name": "PHP",
+            "color": "rgb(90 103 169)",
+            "secondColor": "rgb(122 132 187)",
+            "logo": "php.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "php"]
+        },
+        {
+            "id": 5,
+            "name": "TS",
+            "color": "rgb(40 106 193)",
+            "secondColor": "rgb(45 120 199)",
+            "logo": "TypeScript.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "php"]
+        }
+    ],
+    "frameworks": [
+        {
+            "id": 1,
+            "name": "Vue JS",
+            "color": "rgb(63 186 132)",
+            "secondColor": "rgb(49 72 94)",
+            "logo": "vue.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "js"],
+            "languages": [1, 2, 3]
+        },
+        {
+            "id": 2,
+            "name": "Angular JS",
+            "color": "rgb(175 43 45)",
+            "secondColor": "rgb(223 46 49)",
+            "logo": "angularjs.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "js"],
+            "languages": [1, 2, 3]
+        },
+        {
+            "id": 3,
+            "name": "React JS",
+            "color": "rgb(104 219 251)",
+            "secondColor": "rgb(85 154 230)",
+            "logo": "reactjs.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "js"],
+            "languages": [1, 2, 3]
+        },
+        {
+            "id": 4,
+            "name": "Angular",
+            "color": "rgb(195 0 46)",
+            "secondColor": "rgb(221 0 49)",
+            "logo": "angular.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["front", "ts"],
+            "languages": [1, 2, 5]
+        },
+        {
+            "id": 5,
+            "name": "Symfony",
+            "color": "rgb(35 35 35)",
+            "secondColor": "#000000",
+            "logo": "symfony.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["back", "php"],
+            "languages": [1, 2, 4]
+        },
+        {
+            "id": 6,
+            "name": "Laravel",
+            "color": "rgb(255 52 40)",
+            "secondColor": "rgb(243 32 32)",
+            "logo": "laravel.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["back", "php"],
+            "languages": [1, 2, 4]
+        },
+        {
+            "id": 7,
+            "name": "Cake Php",
+            "color": "rgb(211 59 68)",
+            "secondColor": "rgb(185 40 40)",
+            "logo": "cakephp.jpeg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["back", "php"],
+            "languages": [1, 2, 4]
+        },
+        {
+            "id": 8,
+            "name": "React Native",
+            "color": "rgb(104 219 251)",
+            "secondColor": "rgb(85 154 230)",
+            "logo": "reactjs.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["crossplateform", "js"],
+            "languages": [1, 2, 3]
+        },
+        {
+            "id": 9,
+            "name": "Ionic",
+            "color": "rgb(71 138 255)",
+            "secondColor": "rgb(58 76 237)",
+            "logo": "ionic.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id velit convallis fringilla id pharetra quam. In augue lacus, consequat a malesuada blandit, venenatis ut quam. ",
+            "tags": ["crossplateform", "ts"],
+            "languages": [1, 2, 5]
+        }
+    ]
+}
